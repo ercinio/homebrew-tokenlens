@@ -1,6 +1,6 @@
 cask "tokenlens" do
-  version "0.9.0"
-  sha256 "ced02840f81c39fd6736213a23c651327b273eb4f7a2929c7ba5f8319aa5f528"
+  version "0.9.1"
+  sha256 "782817d3a897030e6022a753c9b2ad30cf05848e86e59f8e9e120f8daf17fb99"
 
   url "https://github.com/ercinio/token-lens/releases/download/v#{version}/TokenLens-#{version}.dmg"
   name "TokenLens"
