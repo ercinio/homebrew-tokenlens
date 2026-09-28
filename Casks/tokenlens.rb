@@ -1,6 +1,6 @@
 cask "tokenlens" do
-  version "0.10.0"
-  sha256 "7a24f7d99aec96d60e41afdd023397e2e5bec1d52edced6a71fdeb2134bcf525"
+  version "0.10.1"
+  sha256 "12ac70473b375798c52c043aa90fa9a507ddee1678f0eec48456dee16b892f23"
 
   url "https://github.com/ercinio/token-lens/releases/download/v#{version}/Pagerbit-#{version}.dmg"
   name "Pagerbit"
