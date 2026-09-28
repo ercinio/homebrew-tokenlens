@@ -1,8 +1,9 @@
 cask "tokenlens" do
-  version "0.9.1"
-  sha256 "782817d3a897030e6022a753c9b2ad30cf05848e86e59f8e9e120f8daf17fb99"
+  version "0.10.0"
+  sha256 "7a24f7d99aec96d60e41afdd023397e2e5bec1d52edced6a71fdeb2134bcf525"
 
-  url "https://github.com/ercinio/token-lens/releases/download/v#{version}/TokenLens-#{version}.dmg"
+  url "https://github.com/ercinio/token-lens/releases/download/v#{version}/Pagerbit-#{version}.dmg"
+  name "Pagerbit"
   name "TokenLens"
   desc "AI coding agents in the Mac notch — monitor, approve, answer, and see your whole AI bill"
   homepage "https://ercinio.github.io/tokenlens-site/"
@@ -15,14 +16,15 @@ cask "tokenlens" do
   auto_updates true
   depends_on macos: ">= :sequoia"
 
-  app "TokenLens.app"
+  app "Pagerbit.app"
 
   # Ad-hoc signed build: clear quarantine so first launch doesn't need right-click ▸ Open.
   postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/TokenLens.app"], sudo: false
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Pagerbit.app"], sudo: false
   end
 
   zap trash: [
+    "~/Library/Application Support/Pagerbit",
     "~/Library/Application Support/TokenLens",
     "~/Library/Preferences/com.ercinio.TokenLens.plist",
   ]
